@@ -24,7 +24,7 @@ jobs:
             binary: wip-linux-arm64
             cross: true
           - target: x86_64-apple-darwin
-            runner: macos-13
+            runner: macos-latest
             binary: wip-darwin-x64
             cross: false
           - target: aarch64-apple-darwin
