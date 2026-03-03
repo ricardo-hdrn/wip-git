@@ -1,0 +1,32 @@
+[package]
+name = "wip-git"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Git stash, but shared across machines via hidden refs"
+repository = "https://github.com/ricardo-hdrn/wip-git"
+homepage = "https://github.com/ricardo-hdrn/wip-git"
+readme = "README.md"
+keywords = ["git", "stash", "wip", "remote", "sync"]
+categories = ["command-line-utilities", "development-tools"]
+exclude = ["npm/", ".claude/", "tests/"]
+
+[[bin]]
+name = "wip"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+clap_complete = "4"
+chrono = "0.4"
+colored = "2"
+rmcp = { version = "0.16", features = ["server", "transport-io", "macros"] }
+tokio = { version = "1", features = ["rt", "macros", "io-std", "io-util"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+schemars = "1"
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
+tempfile = "3"

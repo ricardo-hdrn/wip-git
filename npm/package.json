@@ -1,0 +1,23 @@
+{
+  "name": "wip-git",
+  "version": "0.1.0",
+  "description": "Git stash, but shared.",
+  "bin": {
+    "wip": "bin/wip"
+  },
+  "files": [
+    "bin"
+  ],
+  "keywords": [
+    "git",
+    "stash",
+    "wip",
+    "remote",
+    "sync"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hdrn/wip-git"
+  }
+}
